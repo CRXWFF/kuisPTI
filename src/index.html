@@ -1,14 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="../assets/logo.png" />
-    <link rel="stylesheet" href="../style/style.css" />
-    <title>KUIS PTI</title>
-  </head>
-  <body>
-    <h1>Sejarah Lagu</h1>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makanan Khas Nusantara</title>
+    <style>
+        body {
+            font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4ede8; 
+        }
+        header {
+            background-color: #d2b48c;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #8b7355; 
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .box {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff; 
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .box img {
+            border-radius: 10px 10px 0 0; 
+            max-width: 100%;
+        }
+        .box-name {
+            background-color: #d2b48c; 
+            color: #fff;
+            border-radius: 0 0 10px 10px; 
+            padding: 5px;
+            margin-top: -5px; 
+            font-weight: bold;
+        }
+        footer {
+            background-color: #d2b48c; 
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Makanan Khas Nusantara</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <img src="gadogado.jpg" alt="Gado-Gado">
+            <div class="box-name">Gado-Gado</div>
+            <p>Betawi</p>
+        </div>
+        <div class="box">
+            <img src="nasijamblang.jpg" alt="Nasi Jamblang">
+            <div class="box-name">Nasi Jamblang</div>
+            <p>Cirebon</p>
+        </div>
+        <div class="box">
+            <img src="sotolamongan.jpg" alt="Soto Lamongan">
+            <div class="box-name">Soto Lamongan</div>
+            <p>Jawa Timur</p>
+        </div>
+        <div class="box">
+            <img src="mieaceh.jpeg" alt="Mie Aceh">
+            <div class="box-name">Mie Aceh</div>
+            <p>Aceh</p>
+        </div>
+        <div class="box">
+            <img src="gulaiikanpatin.jpg" alt="Gulai Ikan Patin">
+            <div class="box-name">Gulai Ikan Patin</div>
+            <p>Riau</p>
+        </div>
+        <div class="box">
+            <img src="ayambetutu.jpg" alt="Ayam Betutu">
+            <div class="box-name">Ayam Betutu</div>
+            <p>Bali</p>
+        </div>
+        <div class="box">
+            <img src="pempek.jpeg" alt="Pempek Palembang">
+            <div class="box-name">Pempek</div>
+            <p>Palembang</p>
+        </div>
+        <div class="box">
+            <img src="ayamtaliwang.jpeg" alt="Ayam Taliwang">
+            <div class="box-name">Ayam Taliwang</div>
+            <p>Lombok</p>
+        </div>
+        <div class="box">
+            <img src="kepitingsoka.png" alt="Kepiting Soka">
+            <div class="box-name">Kepiting Soka</div>
+            <p>Kalimantan</p>
+        </div>
+        <div class="box">
+            <img src="tekwan.jpg" alt="Tekwan">
+            <div class="box-name">Tekwan</div>
+            <p>Palembang</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 PTI Food. All rights reserved.</p>
+    </footer>
+</body>
 </html>
