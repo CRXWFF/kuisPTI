@@ -90,12 +90,47 @@
         text-align: center;
         font-weight: bold;
       }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar ul {
+        list-style-type: none;
+        display: flex;
+      }
+      .navbar ul li {
+        margin-right: 20px;
+      }
+
+      .navbar ul li a {
+        color: white;
+        text-decoration: none;
+      }
+      .navbar ul li a:hover {
+        text-decoration: underline;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        position: center;
+      }
     </style>
   </head>
 
   <body>
     <header>
       <div class="jumbotron">
+        <nav class="navbar">
+          <ul>
+            <li><a href="../src/index.html">Home</a></li>
+            <li><a href="#asalNama">Asal Nama</a></li>
+            <li><a href="#sejarah">Sejarah</a></li>
+            <li><a href="#komponen">Komponen</a></li>
+            <li><a href="#manfaat">Manfaat</a></li>
+            <li><a href="#kandungan">Kandungan</a></li>
+          </ul>
+        </nav>
         <h1 class="nama">Soto Lamongan</h1>
         <hr />
       </div>
@@ -156,7 +191,7 @@
           </p>
         </article>
 
-        <article id="Menu" class="card">
+        <article id="komponen" class="card">
           <h2>Komponen</h2>
           <hr />
           <p>
