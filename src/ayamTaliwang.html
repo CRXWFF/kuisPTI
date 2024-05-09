@@ -1,210 +1,230 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <title>Ayam Taliwang</title>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ayam Taliwang</title>
+    <link rel="icon" href="../assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+      body {
+        font-family: "Quicksand", sans-serif;
+        padding: 0;
+        margin: 0;
+      }
 
-        <style>
-            * {
-                box-sizing: border-box;
-            }
+      .profile header {
+        text-align: center;
+      }
 
-            body {
-                font-family: 'Quicksand', sans-serif;
-                padding: 0;
-                margin: 0;
-            }
+      .featured-image {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position: center;
+      }
 
-            .profile header {
-                text-align: center;
-            }
+      .profile img {
+        width: 200px;
+      }
 
-            .featured-image {
-                width: 100%;
-                max-height: 300px;
-                object-fit: cover;
-                object-position: center;
-            }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+      }
 
-            .profile img {
-                width: 200px;
-            }
+      .jumbotron {
+        font-size: 20px;
+        padding: 20px;
+        background-color: #8b7355;
+        color: white;
+      }
 
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                border-radius: 5px;
-                padding: 20px;
-                margin-top: 20px;
-            }
+      .table {
+        font-size: 15px;
+      }
 
-            .jumbotron {
-                font-size: 20px;
-                padding: 20px;
-                background-color: #8b7355;
-                color: white;
-            }
+      main {
+        padding: 20px;
+        overflow: auto;
+        display: flex;
+      }
 
-            .table {
-                font-size: 15px;
-            }
+      #content {
+        width: 100%;
+        flex-grow: 1;
+      }
 
-            main {
-                padding: 20px;
-                overflow: auto;
-                display: flex;
-            }
+      aside {
+        flex-basis: 25%;
+        padding-left: 20px;
+      }
 
-            #content {
-                /*float: left;*/
-                width: 100%;
-                flex-grow: 1;
-            }
+      header {
+        display: inline;
+      }
 
-            aside {
-                /*float: right;
-                width: 25%;*/
-                flex-basis: 25%;
-                padding-left: 20px;
-            }
+      @media screen and (max-width: 1000px) {
+        #content,
+        aside {
+          width: 100%;
+          padding: 0;
+        }
+      }
 
-            /*.rounded-img {
-                border-radius: 50%;
-                width: 200px;
-                height: 200px;
-            }*/
+      footer {
+        padding: 20px;
+        color: white;
+        background-color: #8b7355;
+        text-align: center;
+        font-weight: bold;
+      }
+    </style>
+  </head>
 
-            header {
-                display: inline;
-            }
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1 class="nama">Ayam Taliwang</h1>
+        <hr />
+      </div>
+    </header>
 
-            @media screen and (max-width: 1000px) {
-                #content,
-                aside {
-                    width: 100%;
-                    padding: 0;
-                }
-            }
+    <main>
+      <div id="content">
+        <article id="deskripsi" class="card">
+          <p>
+            Ayam Taliwang adalah makanan khas yang berasal dari Taliwang,
+            Sumbawa Barat, Nusa Tenggara Barat. Makanan ini berbahan dasar
+            daging ayam. Daging ayam yang disajikan berasal dari ayam kampung
+            muda yang dibakar kemudian dibumbui dengan semacam saus yang
+            bahannya antara lain cabai merah kering, bawang merah, bawang putih,
+            tomat, terasi goreng, kencur, gula merah, dan garam. Makanan ini
+            biasanya disajikan bersama makanan khas Lombok yang lain, misalnya
+            plecing kangkung.
+          </p>
+        </article>
 
-            footer {
-                padding: 20px;
-                color: white;
-                background-color: #8b7355;
-                text-align: center;
-                font-weight: bold;
-            }
-        </style>
-    </head>
+        <article id="asalNama" class="card">
+          <h2>Asal Nama</h2>
+          <hr />
+          <p>
+            Asal Usul dari Penamaan Ayam Taliwang Nama taliwang sendiri berasal
+            dari kata “tali” dan “wang”. “Tali” merujuk pada tali yang digunakan
+            untuk mengikat ayam saat dipanggang, sedangkan “wang” berarti
+            “harum”. Hal ini juga menjelaskan bahwa aroma harum ayam panggang
+            ini berasal dari bumbu khas yang digunakan.
+          </p>
+        </article>
 
-    <body>
-        <header>
-            <div class="jumbotron">
-                <h1 class="nama">Ayam Betutu</h1>
-                <hr>
-            </div>
-        </header>
+        <article id="sejarah" class="card">
+          <h2>Sejarah</h2>
+          <hr />
+          <p>
+            Ayam Taliwang adalah hidangan khas dari Lombok, Indonesia, terkenal
+            dengan rasa pedasnya yang khas. Hidangan ini berasal dari daerah
+            Taliwang, Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat, dan
+            pertama kali dibuat oleh Ny. Mursi pada sekitar tahun 1970-an. Ayam
+            Taliwang menjadi populer di Lombok dan merambah ke berbagai daerah
+            di Indonesia berkat bumbu rempahnya yang khas dan cita rasa pedas
+            yang kuat.
+          </p>
+        </article>
 
-        <main>
-            <div id="content">
-                <article id="deskripsi" class="card">
-                    <p>
-                        Ayam Taliwang adalah makanan khas yang berasal dari Taliwang, Sumbawa Barat, Nusa Tenggara Barat. Makanan ini berbahan dasar daging ayam. Daging ayam yang disajikan berasal dari ayam kampung muda yang dibakar kemudian dibumbui dengan semacam saus yang bahannya antara lain cabai merah kering, bawang merah, bawang putih, tomat, terasi goreng, kencur, gula merah, dan garam. Makanan ini biasanya disajikan bersama makanan khas Lombok yang lain, misalnya plecing kangkung.
-                    </p>
-                </article>
+        <article id="Menu" class="card">
+          <h2>Komponen</h2>
+          <hr />
+          <p>
+            Ayam Taliwang adalah hidangan khas dari Lombok, Indonesia, yang
+            terkenal dengan rasa pedas dan cita rasanya yang khas. Beberapa
+            komponen utama yang biasanya ada dalam Ayam Taliwang yaoti potongan
+            ayam kampung, bumbu rempah, sambal taliwang, lalapan, jeruk limau,
+            nasi, daun salam, dan serai.
+          </p>
+        </article>
 
-                <article id="asalNama" class="card">
-                    <h2>Asal Nama</h2>
-                    <hr>
-                    <p>
-                        Asal Usul dari Penamaan Ayam Taliwang Nama taliwang sendiri berasal dari kata “tali” dan “wang”. “Tali” merujuk pada tali yang digunakan untuk mengikat ayam saat dipanggang, sedangkan “wang” berarti “harum”. Hal ini juga menjelaskan bahwa aroma harum ayam panggang ini berasal dari bumbu khas yang digunakan.
-                    </p>
-                </article>
+        <article id="manfaat" class="card">
+          <h2>Manfaat</h2>
+          <hr />
+          <p>
+            Ayam Taliwang, seperti kebanyakan hidangan ayam lainnya, memiliki
+            beberapa manfaat yang bisa didapat dari kandungan nutrisi dan
+            bahan-bahannya. Berikut adalah beberapa manfaat potensial dari
+            konsumsi Ayam Taliwang:
+          </p>
+          <ul>
+            <li>Membangun dan memperbaiki jaringan tubuh</li>
+            <li>Membantu dalam pertumbuhan dan perkembangan tubuh</li>
+            <li>Membantu pembentukan dan pemeliharaan tulang yang sehat</li>
+            <li>
+              Memberikan energi yang diperlukan untuk aktivitas sehari-hari
+            </li>
+            <li>Membantu melawan radikal bebas dalam tubuh</li>
+          </ul>
+        </article>
 
-                <article id="sejarah" class="card">
-                    <h2>Sejarah</h2>
-                    <hr>
-                    <p>
-                        Ayam Taliwang adalah hidangan khas dari Lombok, Indonesia, terkenal dengan rasa pedasnya yang khas. Hidangan ini berasal dari daerah Taliwang, Kabupaten Sumbawa, Provinsi Nusa Tenggara Barat, dan pertama kali dibuat oleh Ny. Mursi pada sekitar tahun 1970-an. Ayam Taliwang menjadi populer di Lombok dan merambah ke berbagai daerah di Indonesia berkat bumbu rempahnya yang khas dan cita rasa pedas yang kuat.
-                    </p>
-                </article>
+        <article id="kandungan" class="card">
+          <h2>Kandungan</h2>
+          <hr />
+          <p>
+            Nasi jamblang merupakan nasi yang disajikan dengan berbagai jenis
+            lauk pauk dan sambal khas daerah Cirebon. Kandungan dalam nasi
+            jamblang akan bervariasi tergantung pada jenis lauk pauk dan sambal
+            yang disertakan dalam sajian tersebut. Namun, secara umum, berikut
+            adalah beberapa kandungan yang umumnya terdapat dalam nasi jamblang:
+          </p>
+          <ul>
+            <li>Asam Amino</li>
+            <li>Protein</li>
+            <li>Lemak</li>
+            <li>Kolesterol</li>
+            <li>Vitamin B</li>
+            <li>Sodium</li>
+          </ul>
+        </article>
+      </div>
 
-                <article id="Menu" class="card">
-                    <h2>Komponen</h2>
-                    <hr>
-                    <p>
-                        Ayam Taliwang adalah hidangan khas dari Lombok, Indonesia, yang terkenal dengan rasa pedas dan cita rasanya yang khas. Beberapa komponen utama yang biasanya ada dalam Ayam Taliwang yaoti potongan ayam kampung, bumbu rempah, sambal taliwang, lalapan, jeruk limau, nasi, daun salam, dan serai.
-                    </p>
-                </article>
+      <aside>
+        <article id="profile" class="profile card">
+          <header>
+            <h3>Ayam Taliwang</h3>
+            <figure>
+              <img src="../assets/ayamtaliwang.jpeg" class="rounded-img" />
+            </figure>
+          </header>
 
-                <article id="manfaat" class="card">
-                    <h2>Manfaat</h2>
-                    <hr>
-                    <p>  
-                        Ayam Taliwang, seperti kebanyakan hidangan ayam lainnya, memiliki beberapa manfaat yang bisa didapat dari kandungan nutrisi dan bahan-bahannya. Berikut adalah beberapa manfaat potensial dari konsumsi Ayam Taliwang:
-                    </p>
-                    <ul>     
-                        <li>Membangun dan memperbaiki jaringan tubuh</li>
-                        <li>Membantu dalam pertumbuhan dan perkembangan tubuh</li>
-                        <li>Membantu pembentukan dan pemeliharaan tulang yang sehat</li>
-                        <li>Memberikan energi yang diperlukan untuk aktivitas sehari-hari</li>
-                        <li>Membantu melawan radikal bebas dalam tubuh</li>
-                    </ul>
-                </article>
+          <section>
+            <table class="table">
+              <tr>
+                <th>Tempat Asal</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Daerah</th>
+                <td>Lombok, Kabupaten Sumbawa, NTB</td>
+              </tr>
+              <tr>
+                <th>Variasi</th>
+                <td>Variasi beragam di seluruh Nusantara</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
 
-                <article id="kandungan" class="card">
-                    <h2>Kandungan</h2>
-                    <hr>
-                    <p>
-                        Nasi jamblang merupakan nasi yang disajikan dengan berbagai jenis lauk pauk dan sambal khas daerah Cirebon. 
-                        Kandungan dalam nasi jamblang akan bervariasi tergantung pada jenis lauk pauk dan sambal yang disertakan dalam sajian tersebut. 
-                        Namun, secara umum, berikut adalah beberapa kandungan yang umumnya terdapat dalam nasi jamblang:
-                    </p>
-                    <ul>
-                        <li>Asam Amino</li>
-                        <li>Protein</li>
-                        <li>Lemak</li>
-                        <li>Kolesterol</li>
-                        <li>Vitamin B</li>
-                        <li>Sodium</li>                        
-                    </ul>
-                </article>
-            </div>
-
-            <aside>
-                <article id="profile" class="profile card">
-                    <header>
-                        <h3>Ayam Taliwang</h3>
-                        <figure>
-                            <img src="ayamtaliwang.jpeg" class="rounded-img">
-                        </figure>
-                    </header>
-
-                    <section>
-                        <table class="table">
-                            <tr>
-                              <th>Tempat Asal</th>
-                              <td>Indonesia</td>
-                            </tr>
-                            <tr>
-                              <th>Daerah</th>
-                              <td>Lombok, Kabupaten Sumbawa, NTB</td>
-                            </tr>
-                            <tr>
-                              <th>Variasi</th>
-                              <td>Variasi beragam di seluruh Nusantara</td>
-                            </tr>
-                          </table>
-                    </section>
-                </article>
-            </aside>
-        </main>
-
-        <footer>
-            <p>Maryam Silva &#169; 2024, Universitas Pendidikan Indonesia</p>
-        </footer>
-    </body>
+    <footer>
+      <p>Maryam Silva &#169; 2024, Universitas Pendidikan Indonesia</p>
+    </footer>
+  </body>
 </html>

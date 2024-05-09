@@ -1,145 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/logo.png" />
     <title>Makanan Khas Nusantara</title>
     <style>
-        body {
-            font-family: 'Tahoma', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4ede8; 
-        }
-        header {
-            background-color: #d2b48c;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        nav {
-            background-color: #8b7355; 
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        .box {
-            width: 200px;
-            padding: 10px;
-            margin: 10px;
-            background-color: #fff; 
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-        }
-        .box img {
-            border-radius: 10px 10px 0 0; 
-            max-width: 100%;
-        }
-        .box-name {
-            background-color: #d2b48c; 
-            color: #fff;
-            border-radius: 0 0 10px 10px; 
-            padding: 5px;
-            margin-top: -5px; 
-            font-weight: bold;
-        }
-        footer {
-            background-color: #d2b48c; 
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+      body {
+        font-family: "Tahoma", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4ede8;
+      }
+      header {
+        background-color: #d2b48c;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      nav {
+        background-color: #8b7355;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      nav a {
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin: 0 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .box a {
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        color: white;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .box {
+        width: 200px;
+        padding: 10px;
+        margin: 10px;
+        background-color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .box img {
+        border-radius: 10px 10px 0 0;
+        max-width: 100%;
+      }
+      .box-name {
+        background-color: #d2b48c;
+        color: #fff;
+        border-radius: 0 0 10px 10px;
+        padding: 5px;
+        margin-top: -5px;
+        font-weight: bold;
+      }
+
+      footer {
+        background-color: #d2b48c;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        bottom: 0;
+        width: 100%;
+      }
+      #box_section {
+        text-align: center;
+        border-radius: 0 0 10px 10px;
+      }
+      aside {
+        background-color: #d2b48c;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+<main>
+  <body>
     <header>
+      <div class="jumbotron">
         <h1>Makanan Khas Nusantara</h1>
+      </div>
     </header>
+
     <nav>
-        <ul>
-            <li><a href="#beranda">Beranda</a></li>
-            <li><a href="#tentang">Tentang Kami</a></li>
-            <li><a href="#kontak">Kontak</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
     </nav>
-    <div class="container">
+    <main>
+      <div class="container">
         <div class="box">
-            <img src="gadogado.jpg" alt="Gado-Gado">
-            <div class="box-name">Gado-Gado</div>
-            <p>Betawi</p>
+          <a href="../src/gadoGado.html"
+            ><img src="../assets/Gadogado.jpg" alt="Gado-Gado"/></a>
+          <div class="box-name"><a href="../src/gadoGado.html">Gado-Gado</a></div>
+          <p>Betawi</p>
         </div>
+  
         <div class="box">
-            <img src="nasijamblang.jpg" alt="Nasi Jamblang">
-            <div class="box-name">Nasi Jamblang</div>
-            <p>Cirebon</p>
+          <a href="../src/nasijamblang.html">
+            <img src="../assets/nasijamblang.jpg" alt="Nasi Jamblang" />
+          <div class="box-name">
+            <a href="../src/nasiJamblang.html">Nasi Jamblang</a>
+          </div>
+          <p>Cirebon</p>
         </div>
+  
         <div class="box">
-            <img src="sotolamongan.jpg" alt="Soto Lamongan">
-            <div class="box-name">Soto Lamongan</div>
-            <p>Jawa Timur</p>
+          <img src="../assets/sotolamongan.jpg" alt="Soto Lamongan" />
+          <div class="box-name">
+            <a href="../src/sotoLamongan.html">Soto Lamongan</a>
+          </div>
+          <p>Jawa Timur</p>
         </div>
+  
         <div class="box">
-            <img src="mieaceh.jpeg" alt="Mie Aceh">
-            <div class="box-name">Mie Aceh</div>
-            <p>Aceh</p>
+          <img src="../assets/mieaceh.jpeg" alt="Mie Aceh" />
+          <div class="box-name"><a href="../src/mieAceh.html">Mie Aceh</a></div>
+          <p>Aceh</p>
         </div>
+  
         <div class="box">
-            <img src="gulaiikanpatin.jpg" alt="Gulai Ikan Patin">
-            <div class="box-name">Gulai Ikan Patin</div>
-            <p>Riau</p>
+          <img src="../assets/gulaiikanpatin.jpg" alt="Gulai Ikan Patin" />
+          <div class="box-name">
+            <a href="../src/gulai.html">Gulai Ikan Patin</a>
+          </div>
+          <p>Riau</p>
         </div>
+  
         <div class="box">
-            <img src="ayambetutu.jpg" alt="Ayam Betutu">
-            <div class="box-name">Ayam Betutu</div>
-            <p>Bali</p>
+          <img src="../assets/ayambetutu.jpg" alt="Ayam Betutu" />
+          <div class="box-name">
+            <a href="../src/ayamBetutu.html">Ayam Betutu</a>
+          </div>
+          <p>Bali</p>
         </div>
+  
         <div class="box">
-            <img src="pempek.jpeg" alt="Pempek Palembang">
-            <div class="box-name">Pempek</div>
-            <p>Palembang</p>
+          <img src="../assets/pempek.jpeg" alt="Pempek Palembang" />
+          <div class="box-name"><a href="../src/pempek.html">Pempek</a></div>
+          <p>Palembang</p>
         </div>
+  
         <div class="box">
-            <img src="ayamtaliwang.jpeg" alt="Ayam Taliwang">
-            <div class="box-name">Ayam Taliwang</div>
-            <p>Lombok</p>
+          <img src="../assets/ayamtaliwang.jpeg" alt="Ayam Taliwang" />
+          <div class="box-name">
+            <a href="../src/ayamTaliwang.html">Ayam Taliwang</a>
+          </div>
+          <p>Lombok</p>
         </div>
+  
         <div class="box">
-            <img src="kepitingsoka.png" alt="Kepiting Soka">
-            <div class="box-name">Kepiting Soka</div>
-            <p>Kalimantan</p>
+          <img src="../assets/kepitingsoka.png" alt="Kepiting Soka" />
+          <div class="box-name">
+            <a href="../src/kepitingSoka.html">Kepiting Soka</a>
+          </div>
+          <p>Kalimantan</p>
         </div>
+  
         <div class="box">
-            <img src="tekwan.jpg" alt="Tekwan">
-            <div class="box-name">Tekwan</div>
-            <p>Palembang</p>
+          <img src="../assets/tekwan.jpg" alt="Tekwan" />
+          <div class="box-name"><a href="../src/tekwan.html">Tekwan</a></div>
+          <p>Palembang</p>
         </div>
-    </div>
+      </div>
+
+      <aside>
+        <article class="profile card">
+            <h2>About Us</h2>
+            <p>KELOMPOK 5 PULUH</p>
+            <p>Muhammad Nashirul Haq Resa 2304989</p>
+            <p>Asep Nadhirin 2308165</p>
+      </aside>
+    </main></main>
+    
     <footer>
-        <p>PTI RPL 2A KELOMPOK 5 &#169; 2024, Universitas Pendidikan Indonesia</p>
+      <p>RPL 2A KELOMPOK 5 &#169; 2024, Universitas Pendidikan Indonesia</p>
     </footer>
-</body>
+  </body>
+  </main>
 </html>
